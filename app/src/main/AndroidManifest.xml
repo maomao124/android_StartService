@@ -16,7 +16,13 @@
         <service
                 android:name=".service.MyService"
                 android:enabled="true"
-                android:exported="true" />
+                android:exported="true">
+            <intent-filter>
+                <action android:name="mao.android_startservice.service.MYSERVICE" />
+            </intent-filter>
+
+        </service>
+
 
         <activity
                 android:name=".MainActivity"
